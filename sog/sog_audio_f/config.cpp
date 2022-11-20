@@ -25,55 +25,55 @@ class CfgSounds {
 class CfgSFX {
 	class SOGSubmarineDrainingSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineDraining.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineDraining.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineExteriorAmbienceSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineExteriorAmbience.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineExteriorAmbience.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineFloodingSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineFlooding.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineFlooding.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineFloodSirenSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineFloodSiren.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineFloodSiren.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineHatchSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineHatch.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineHatch.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineInteriorAmbienceSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineInteriorAmbience.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineInteriorAmbience.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineLockoutDoorSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineLockoutDoor.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineLockoutDoor.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineEnterExteriorSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineEnterExterior.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineEnterExterior.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 
 	class SOGSubmarineValveSFX {
 		sounds[] = {"sound0"};
-		sound0[] = {"/sog/sog_audio_f/submarine/sounds/SOGSubmarineValve.ogg", db10, 1, 400, 1, 0, 0, 0};
+		sound0[] = {"\sog\sog_audio_f\submarine\sounds\SOGSubmarineValve.ogg", db10, 1, 400, 1, 0, 0, 0};
 		empty[] = {"", 0, 0, 0, 0, 0, 0, 0};
 	};
 };
@@ -81,45 +81,45 @@ class CfgSFX {
 class CfgSentences {
 	class Class01 {
 		class Lecture01 {
-			file = "/sog/sog_audio_f/hospital/class01/lecture/Lecture01.bikb";
+			file = "\sog\sog_audio_f\hospital\class01\lecture\Lecture01.bikb";
 			#include <hospital\class01\lecture\Lecture01.bikb>
 		};
 	};
 	class Dialogues {
 		class Dialogue01 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue01.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue01.bikb";
 			#include <hospital\dialogue\Dialogue01.bikb>
 		};
 		class Dialogue02 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue02.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue02.bikb";
 			#include <hospital\dialogue\Dialogue02.bikb>
 		};
 		class Dialogue03 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue03.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue03.bikb";
 			#include <hospital\dialogue\Dialogue03.bikb>
 		};
 		class Dialogue04 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue04.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue04.bikb";
 			#include <hospital\dialogue\Dialogue04.bikb>
 		};
 		class Dialogue05 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue05.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue05.bikb";
 			#include <hospital\dialogue\Dialogue05.bikb>
 		};
 		class Dialogue06 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue06.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue06.bikb";
 			#include <hospital\dialogue\Dialogue06.bikb>
 		};
 		class Dialogue07 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue07.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue07.bikb";
 			#include <hospital\dialogue\Dialogue07.bikb>
 		};
 		class Dialogue08 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue08.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue08.bikb";
 			#include <hospital\dialogue\Dialogue08.bikb>
 		};
 		class Dialogue09 {
-			file = "/sog/sog_audio_f/hospital/dialogue/Dialogue09.bikb";
+			file = "\sog\sog_audio_f\hospital\dialogue\Dialogue09.bikb";
 			#include <hospital\dialogue\Dialogue09.bikb>
 		};
 	};

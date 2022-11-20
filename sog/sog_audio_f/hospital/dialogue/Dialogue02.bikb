@@ -1,14 +1,14 @@
 class Sentences {	
 	class Part02A {
 		text = "";
-		speech[] = {"/sog/sog_audio_f/hospital/dialogue/sounds/SOGHospitalNPC02A.ogg"};
+		speech[] = {"\sog\sog_audio_f\hospital\dialogue\sounds\SOGHospitalNPC02A.ogg"};
 		class Arguments {};
 		actor = "dummy";
 	};
 
     class Part02B {
 		text = "";
-		speech[] = {"/sog/sog_audio_f/hospital/dialogue/sounds/SOGHospitalNPC02B.ogg"};
+		speech[] = {"\sog\sog_audio_f\hospital\dialogue\sounds\SOGHospitalNPC02B.ogg"};
 		class Arguments {};
 		actor = "dummy";
 	};
