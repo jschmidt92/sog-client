@@ -34,9 +34,9 @@ jobs:
             sog/
             README.md
   
-  # deploy-source:
-  #   name: Deploy
-  #   needs: build-source
-  #   uses: jschmidt92/sog-client/.github/workflows/deploy.yml@master
-  #   with:
-  #     build-version: ${{ needs.build-source.outputs.VERSION }}
+  deploy-source:
+    name: Deploy
+    needs: build-source
+    uses: jschmidt92/sog-client/.github/workflows/deploy.yml@master
+    with:
+      build-version: ${{ needs.build-source.outputs.VERSION }}
