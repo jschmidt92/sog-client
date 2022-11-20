@@ -1,0 +1,67 @@
+name: Deploy
+
+on:
+  workflow_call:
+    inputs:
+      build-version:
+        required: true
+        type: string
+
+jobs:
+  stage:
+    name: Staging
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download Artifact
+        id: download-artifact
+        uses: dawidd6/action-download-artifact@v2
+        with:
+          workflow: build.yml
+
+      - name: List Directory
+        run: ls
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: SOGClient
+          path: SOGClient/
+  
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    environment: Production
+    needs: stage
+    steps:
+      - name: Download Artifact
+        uses: actions/download-artifact@v3
+        with:
+          name: SOGClient
+
+      - name: List Directory
+        run: ls -R
+
+      - name: Archive Artifact
+        uses: thedoctor0/zip-release@master
+        with:
+          filename: SOGClient.zip
+
+      - name: Create GitHub Release
+        id: create-new-release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          release_name: SOGClient_v${{ inputs.build-version }}
+          tag_name: ${{ inputs.build-version }}
+
+      - name: Upload Asset
+        id: upload-release-asset
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create-new-release.outputs.upload_url }}
+          asset_path: ./SOGClient.zip
+          asset_name: SOGClient_v${{ inputs.build-version }}.zip
+          asset_content_type: application/zip

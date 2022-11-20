@@ -1,0 +1,42 @@
+name: Build
+
+on:
+  push:
+    branches: [ "master" ]
+    paths-ignore:
+      - ".github/**"
+      - "SOG/SOG_Core/script_version.hpp"
+      - "tools/**"
+      - ".gitignore"
+  workflow_dispatch:
+
+jobs:
+  build-source:
+    name: Build Source
+    runs-on: ubuntu-latest
+    outputs:
+      VERSION: ${{ steps.bump-version.outputs.VERSION }}
+    steps:
+      - name: Checkout Source Code
+        uses: actions/checkout@v3
+        with:
+          ref: master
+          
+      - name: Bump Version
+        id: bump-version
+        run: python3 tools/version_bumper.py increment_build push_commit
+
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v3
+        with:
+          name: SOGClient
+          path: |
+            sog/
+            README.md
+  
+  # deploy-source:
+  #   name: Deploy
+  #   needs: build-source
+  #   uses: jschmidt92/sog-client/.github/workflows/deploy.yml@master
+  #   with:
+  #     build-version: ${{ needs.build-source.outputs.VERSION }}
