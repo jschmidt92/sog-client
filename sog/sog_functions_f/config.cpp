@@ -77,13 +77,13 @@ class CfgFunctions {
 			};
 		};
 
-		// class Weather {
-		// 	file = "\sog\sog_functions_f\weather";
-		// 	description = "Script is Executed From The Init.sqf or InitServer.sqf";
+		class Weather {
+			file = "\sog\sog_functions_f\weather";
+			description = "Script is Executed From The Init.sqf or InitServer.sqf";
 
-		// 	class checkRain {
-		// 		file = "\sog\sog_functions_f\weather\scripts\fn_checkRain.sqf";
-		// 	};
-		// };
+			class checkRain {
+				file = "\sog\sog_functions_f\weather\scripts\fn_checkRain.sqf";
+			};
+		};
 	};
 };
